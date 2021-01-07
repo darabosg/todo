@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  border-bottom: 2px solid black;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.container .open {
+  margin: 0.5rem;
+  height: fit-content;
+  background-color: yellow;
+  width: 250px;
+  min-width: 250px;
+  border: 2px solid black;
+}
+.container .open .card-header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+.container .open .card-header span {
+  margin-left: 1rem;
+}
+.container .open .list {
+  height: 300px;
+}
+.container .closed {
+  margin: 0.1rem;
+  margin-top: 0.5rem;
+  height: fit-content;
+  background-color: yellow;
+  border: 2px solid black;
+}
+.container .closed .card-header {
+  height: 332px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+}
+.container .closed .card-header span {
+  margin-top: 1rem;
+}
+.container .closed .list {
+  display: none;
+}
+.container .must .card-header {
+  background: #f44336;
+}
+.container .time .card-header {
+  background: #2196f3;
+}
+.container .not-important .card-header {
+  background: #ff9800;
+}
+.container .future .card-header {
+  background: #4caf50;
+}
+
+footer {
+  border-top: 2px solid black;
+  height: 4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+footer span {
+  margin-right: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

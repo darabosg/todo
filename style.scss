@@ -1,0 +1,135 @@
+$red: #f44336;
+$orange: #ff9800;
+$blue: #2196f3;
+$green: #4caf50;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    border-bottom: 2px solid black;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 2rem;
+}
+
+// main {
+//     display: flex;
+//     justify-content: center;
+// }
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    // background-color: salmon;
+
+    .open {
+        margin: 0.5rem;
+        height: fit-content;
+        background-color: yellow;
+        width: 250px;
+        min-width: 250px;
+        border: 2px solid black;
+
+        .card-header{
+            height: 32px;
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 1rem;
+            }
+        }
+
+        .list {
+            height: 300px;
+
+        }
+    }
+
+    .closed {
+        margin: 0.1rem;
+        margin-top: 0.5rem;
+        height: fit-content;
+        background-color: yellow;
+        
+        // min-width: 250px;
+        border: 2px solid black;
+
+        .card-header{
+            height: (332px);
+            width: 32px;
+            display: flex;
+            align-items: center;
+            writing-mode: vertical-rl;
+
+            span {
+                margin-top: 1rem;
+            }
+        }
+        .list {
+            display: none;
+
+        }
+    }
+
+    .must {
+        
+        .card-header {
+            background: $red;
+        }
+    }
+    .time {
+        
+        .card-header {
+            background: $blue;
+        }
+    }
+    .not-important {
+        
+        .card-header {
+            background: $orange;
+        }
+    }
+    .future {
+        
+        .card-header {
+            background: $green;
+        }
+    }
+
+}
+
+footer {
+    border-top: 2px solid black;
+    height: 4rem;
+    // margin-top: -4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    span {
+        margin-right: 2rem;
+    }
+}
+
+
+
